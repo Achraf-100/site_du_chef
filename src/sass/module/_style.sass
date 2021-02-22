@@ -1,11 +1,11 @@
 body 
     margin: 0
-
 //MEDIA QUERY
 
 @media ( min-width: 0px) and (max-width: 600px )
     body 
         width: 100%
+        overflow-x: hidden
     header
         width: 100%
         &:first-child
@@ -21,20 +21,28 @@ body
                 padding: 0% 0px
                 
             a
-                padding: 0px
+                padding: 0px 5px
+                font-size: 7px
             .container-fluid
                 margin: 0px auto 
+            .container
+                margin: 0
+    #fond
+        h2
+            font-size: 20px
+        span
+            font-size: 20px
 
     section 
         &:nth-child(2)
             .cointr
-                width: 20%
+                width: 10%
                 height: 20%
                 margin-left: 0%
             .cointr2
 
                 margin-right: 0%
-                width: 20%
+                width: 10%
                 height: 20%
             img 
                 margin-left: auto
@@ -56,7 +64,9 @@ body
             img
                 height: 100px
                 
-    
+    #equipe
+        margin: 0
+
     section 
         &:nth-child(4)
             p 
@@ -64,10 +74,16 @@ body
             .span1 
                 font-size: 5px
             .formulaire
-                width: 100px
-                margin: auto
+                width: 100%
+                margin: 0
+                padding: 0
+                font-size: 8px
             .btn
                 font-size: 10px
+            .test
+                margin: 0px -50px
+                width: 100%
+
     section 
         &:nth-child(5) 
             img 
@@ -96,13 +112,64 @@ body
             display: inline-block
 
 
+@media (min-width: 768px) and ( max-width: 1366px)
+    body
+        overflow-x: hidden
+    header
+        width: 100%
+        &:first-child
+            background-size: cover
+            h1 
+                font-size: 30px
+            span
+                font-size: 35px
+            button
+                padding: 3%
+                font-size: 10px
+            nav 
+                padding: 0% 0px
+                max-width: max-content
+                
+            a
+                padding: 0px 20px
+                font-size: 7px
+            .container-fluid
+                margin: 0px auto 
+            img
+                height: 50px
+                width: 50px
+                padding: 0
+                margin: 0
             
             
+    section 
+        &:nth-child(2)
+            .cointr
+                width: 10%
+                height: 20%
+                margin-left: 0%
+            .cointr2
 
-            
-            
-        
-        
+                margin-right: auto
+                width: 10%
+                height: 20%
+            img 
+                margin-left: 0%
+                width: 100%
+            strong
+                font-size: 11px
+            p 
+                font-size: 10px
+            .icone 
+                font-size: 40px
+            h3 
+                font-size: 13px
+    #equipe
+        margin: 0
+    
+    .mx-3
+        height: 200px
+
 
 
 // Header
@@ -242,13 +309,9 @@ section
                 background-color: #cbcbcb 
                 color: #dd003f 
         .cointr
-            width: 150px
-            height: 150px
             margin-left: 0%
         .cointr2
             margin-left: 85%
-            width: 150px
-            height: 150px
 
 
 
